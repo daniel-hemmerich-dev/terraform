@@ -39,7 +39,8 @@ Use the -chdir parameter to navigate between the different providers. Valid valu
 - ```azure```
 - ```docker```
 - ```gcp```
-- ```kubernetes```
+- ``````
+- ```helm```
 
 To run the Google Cloud Platform example run:
 ```shell 
@@ -49,47 +50,47 @@ terraform -chdir=./gcp init
 ### Initialize project
 Initializes the project and download the needed providers.
 ```shell 
-terraform -chdir=<aws|azure|gcp|docker|kubernetes> init
+terraform -chdir=<aws|azure|gcp|docker|k8s|helm> init
 ```
 
 ### Validate
 Checks if the configuration files are valid.
 ```shell
-terraform -chdir=<aws|azure|gcp|docker|kubernetes> validate
+terraform -chdir=<aws|azure|gcp|docker|k8s|helm> validate
 ```
 
 ### Plan
 Show changes that will be made if the apply command is executed.
 ```shell
-terraform -chdir=<aws|azure|gcp|docker|kubernetes> plan
+terraform -chdir=<aws|azure|gcp|docker|k8s|helm> plan
 ```
 
 ### Apply
 Apply the changes (update or create) of the configuration files.
 ```shell
-terraform -chdir=<aws|azure|gcp|docker|kubernetes> apply
+terraform -chdir=<aws|azure|gcp|docker|k8s|helm> apply
 ```
 
 ### Show
 Shows the current state.
 ```shell
-terraform -chdir=<aws|azure|gcp|docker> show
+terraform -chdir=<aws|azure|gcp|docker|k8s|helm> show
 ```
 
 ### Output
 Shows the output values specified in the output files.
 ```shell
-terraform -chdir=<aws|azure|gcp|docker|kubernetes> output
+terraform -chdir=<aws|azure|gcp|docker|k8s|helm> output
 ```
 
 ### Destroy
 Destroys created infrastructure.
 ```shell
-terraform -chdir=<aws|azure|gcp|docker|kubernetes> destroy
+terraform -chdir=<aws|azure|gcp|docker|k8s|helm> destroy
 ```
 
 ### Format
 Format all configuration files to the standard.
 ```shell
-terraform -chdir=<aws|azure|gcp|docker|kubernetes> fmt
+terraform -chdir=<aws|azure|gcp|docker|k8s|helm> fmt
 ```
