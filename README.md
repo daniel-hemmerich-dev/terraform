@@ -22,11 +22,15 @@ export ARM_TENANT_ID="<TENANT_VALUE>"
 2. Set your `project_id` in the `variables.tf` file.
 
 ### Docker
-1. Start Docker
+1. Install and start Docker
 
 ### Kubernetes
-1. Start Docker
-2. Start Minikube `minikube start`
+1. Install and start Docker
+2. Install and start Minikube `minikube start`
+
+### Helm
+1. Install and start Docker
+2. Install and start Minikube `minikube start`
 
 
 ## Terraform most used commands
